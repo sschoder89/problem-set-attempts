@@ -1,0 +1,12 @@
+height = int(input("height:"))
+ 
+if height <= 0: print("please give a value greater than 0") 
+elif height > 23:
+    print("please give a value smaller than 23")
+else:
+    for r in range(height):
+        for s in range (0, (height-r-1)):
+            print(" ", end='')
+        for hash in range (0, 2+r):
+            print("#", end='')
+print("")
